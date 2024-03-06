@@ -15,7 +15,7 @@ const PaymentForm = () => {
  const [name,setname]=useState()
   
   const [Data, setData] = useState({});
-  const base_url="http://localhost:3001"
+  const base_url="https://pbr-vits-b.onrender.com"
   
 const [category,setCategory]=useState();
  
