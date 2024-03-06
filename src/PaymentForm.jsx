@@ -15,7 +15,7 @@ const PaymentForm = () => {
  const [name,setname]=useState()
   
   const [Data, setData] = useState({});
-  const base_url="https://pbr-vits-b.onrender.com"
+  
   
 const [category,setCategory]=useState();
  
@@ -38,7 +38,7 @@ const [category,setCategory]=useState();
         } else {
           setLoading(true);
          
-            const response = await axios.post(`${base_url}/initiatePayment`, {
+            const response = await axios.post(`https://pbr-vits-b.onrender.com/initiatePayment`, {
               amount,
               rollNumber,
             });
